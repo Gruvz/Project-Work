@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+<html lang="en">
+<head>
+<!--Подключение CSS стилей -->
+    <link type="text/css" href="{% static 'base.css' %}" rel="stylesheet">
+
+<!-- Google шрифт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+
+<!-- Метаданные и Title -->
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="nav_bg_color">
+            <span class="dropdown">
+            <button class="dropbtn">Библиотека</button>
+                <span class="dropdown-content">
+                    <a href="#" class="href_color">Ссылка 1</a>
+                    <a href="#" class="href_color">Ссылка 2</a>
+                    <a href="#" class="href_color">Ссылка 3</a>
+            </span>
+                </span>
+
+                <span><a href="#" class="nav">Статьи</a></span>
+                <span><a href="#" class="nav">О сайте</a></span>
+                <span><a href="{% url 'add_post' %}" class="nav">Добавить статью</a></span>
+        </div>
+    </nav>
+</header>
+
+<footer>
+    <div class="footer">
+            &copy; Сайт был создан в 2022 году.
+    </div>
+</footer>
+{%block content%}
+{%endblock%}
+</body>
+</html>

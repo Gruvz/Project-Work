@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %} {{post.title}} {% endblock %}</title>
+</head>
+
+<body>
+{% block content %}
+<main>
+
+    <h1>{{books.Title}}</h1>
+        <small>By: {{books.Create.first_name}} {{books.Create.last_name}}</small><br>
+    <hr>
+    <br>
+            {{ books.Content }}
+    <br><br>
+            <a href="{% url 'base' %}" class="button">Домой</a>
+
+</main>
+{% endblock %}
+</body>
+</html>

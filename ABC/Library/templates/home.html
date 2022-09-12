@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>{% block title %}Библиотека{% endblock %}</title>
+</head>
+
+
+<body>
+{%block content%}
+    <main>
+
+    <h1>Post</h1>
+        {% for book in data%}
+        <li><a href="{% url 'article-detail' book.pk %}"> {{ book.Title }} </a>  - {{ book.Author }}  {{book.Content}}<br>
+        </li>
+        {%endfor%}
+
+
+
+   </main>
+{% endblock %}
+</body>
+</html>

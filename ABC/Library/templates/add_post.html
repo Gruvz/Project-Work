@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>{% block title %}Добавить пост{% endblock %}</title>
+</head>
+
+
+<body>
+{%block content%}
+
+    <main>
+    <h1>Добавить сообщение</h1>
+{#     <div class="tmp-div">#}
+{#      <div class="tmp-form">#}
+     <div class="tmp-div">
+      <div>
+        <form method="POST" >
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="button">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+   </main>
+{% endblock %}
+</body>
+</html>

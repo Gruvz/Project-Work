@@ -1,0 +1,72 @@
+@import "nav.css";
+@import "form.css";
+
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    color: #03a0d7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkorange;
+    /*text-decoration: underline;*/
+}
+
+a.button{
+    padding: 9px 9px;
+    background-color: #5e616e;
+    border-radius: 4px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+}
+
+.button {
+    padding: 9px 9px;
+    background-color: #5e616e;
+    border-radius: 4px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    border: 0px
+}
+
+.button:hover {
+    color: darkorange;
+    }
+
+
+a.button{
+    padding: 9px 9px;
+    background-color: #5e616e;
+    border-radius: 4px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+}
+
+main {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*a:hover.button{*/
+/*    color: #a3a9ab;*/
+/*}*/
+
+
+
+
